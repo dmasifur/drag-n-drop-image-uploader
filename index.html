@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drag and Drop File Uploader</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="hero">
+      <label for="input-file" id="drop-box">
+        <input
+          hidden
+          type="file"
+          name="input-file"
+          id="input-file"
+          accept="image/**"
+        />
+        <div id="img-view">
+          <img src="./img/icon.png" alt="upload icon" />
+          <p>
+            Drag and drop or click here <br />
+            to upload image.
+          </p>
+          <span>Upload any images from desktop</span>
+        </div>
+      </label>
+    </div>
+  </body>
 </html>
